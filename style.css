@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    display: flex;
+    padding: 14px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    background-color:bisque;
+}
+
+span {
+    font-size: 2rem;
+}
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.icon {
+    font-size: 2rem;
+    display: none;
+}
+/* a:hover{
+    background-color: orangered;
+} */
+
+nav {
+    
+    display: contents;
+}
+nav :hover{
+    background-color:orangered;
+}
+.main-container{
+    background-image: url(https://images.pexels.com/photos/3564304/pexels-photo-3564304.jpeg?cs=srgb&dl=pexels-laura-garcia-1667452-3564304.jpg&fm=jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+   
+}
+.container{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    font-size: 1.6rem;
+    border-radius:30px;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    text-align: center;
+}
+strong{
+    font-size: 1.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item{
+    margin: 10px;
+    text-decoration: none;
+     background-color: orangered; 
+    border-radius: 30px;
+    text-align: center; 
+    color: white;
+}
+.item:hover{
+    background-color: grey;
+}
+b:hover{
+    color: orangered;
+}
+b{
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+}
+
+@media screen and (width <= 600px) {
+    nav{
+        display: none;
+    }
+    .icon{
+        display:flex;
+        align-items: center;
+    }
+    
+}
+@media screen and (width <= 600px) {
+    .container{
+        position:absolute;
+        left:40px;
+        top:70px;
+    }
+}
